@@ -43,7 +43,7 @@ export default function Header() {
         <div className="w-full lg:pb-0 xl:pb-0">      
           <div className='flex items-center justify-around'>
           <div className=' md:hidden lg:block xl:block lg:w-[300px] xl:w-[540px] diagonal-split-gray py-3'>
-          <Logo/>
+          <Logo width={60} height={84}/>
 </div>   
             <div className='flex-grow'>
           

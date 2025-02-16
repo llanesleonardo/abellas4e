@@ -17,7 +17,7 @@ export default function Hero() {
        return (
     <div id='inicio' className='relative overflow-hidden'>
       <section className="bg-[transparent] mt-[120px]">
-      <div  className='bg-white container mx-auto h-[600px]' style={{backgroundImage: `url(${''})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+      <div  className='bg-white container mx-auto h-[600px]' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
         <div className="w-full pr-[90px] pt-8  flex items-start justify-end">
            <div className=" ">
             <div className='flex items-start justify-end flex-wrap '>

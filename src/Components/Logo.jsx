@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Logo(props) {
   return (
-    <div>
+    <div className=''>
          <svg
     className="img-fluid"
     id="outputsvg"
@@ -13,8 +13,6 @@ export default function Logo(props) {
       cursor: "move",
       transition: "transform 200ms ease-in-out",
     }}
-    width={60}
-    height={84}
     viewBox="0 0 4600 2840"
     {...props}
   >
