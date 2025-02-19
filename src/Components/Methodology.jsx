@@ -17,12 +17,12 @@ export default function Methodology() {
   }
   return (
     <div className='relative bg-[white] py-[100px]'>
-      <div className=" flex items-center justify-center relative pb-5">
+      <div className="lex items-center justify-center relative pb-5">
         <div className="container mx-auto px-4 text-left pb-[100px]">
           <h1 className="text-[#9598e9] text-8xl font-bold mb-0">{t('Methodology')}</h1>
         </div>
       </div>
-      <div className="mx-auto flex justify-end items-start flex-wrap gap-[100px] max-w-[1500px]">
+      <div className=" container mx-auto flex justify-end items-start flex-wrap gap-[100px] max-w-[1500px]">
           <div className="flex-1 flex-col justify-center items-center">
               <div >
 

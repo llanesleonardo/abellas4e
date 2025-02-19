@@ -21,7 +21,7 @@ export default function SecondMessage() {
           <h1 className="text-white text-8xl font-bold mb-0">{t('Lorem ipsum dolor sit amet,consectetuer adipiscing')}</h1>
         </div>
       </div>
-      <div className="flex justify-center items-center flex-wrap gap-[100px]">
+      <div className="container mx-auto  flex justify-center items-center flex-wrap gap-[100px]">
           <div className="w-[350px] flex-col justify-center items-center">
               <div ><Logo width={60} height={84}/></div>
               <div><h1 className='text-white font-bold text-3xl py-5'>LOREM</h1></div>

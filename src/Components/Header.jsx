@@ -40,7 +40,7 @@ export default function Header() {
       <header className='w-full'>
         <div className='top-bar flex items-center justify-between px-4  diagonal-split'>
         </div>
-        <div className="w-full lg:pb-0 xl:pb-0">      
+        <div className="container mx-auto  lg:pb-0 xl:pb-0">      
           <div className='flex items-center justify-around'>
           <div className=' md:hidden lg:block xl:block lg:w-[300px] xl:w-[540px] diagonal-split-gray py-3'>
           <Logo width={60} height={84}/>

@@ -9,6 +9,8 @@ import Services from '../Components/Services.jsx'
 import ThirdMessage from '../Components/ThirdMessage.jsx'
 import Testimonies from '../Components/Testimonies.jsx'
 import Methodology from '../Components/Methodology.jsx'
+import Faq from '../Components/Faq.jsx'
+import Footer from '../Components/Footer.jsx'
 
 export default function PublicHome() {
   return (
@@ -23,8 +25,12 @@ export default function PublicHome() {
         <ThirdMessage />
         <Testimonies />
         <Methodology />
+        <Faq />
+        
       </main>
-      
+      <footer>
+      <Footer />
+      </footer>
     </div>
   )
 }

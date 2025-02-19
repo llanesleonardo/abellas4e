@@ -62,7 +62,7 @@ export default function ImageGrid() {
         ))}
       </div>
       </div>
-      <div className='flex items-center justify-center pt-5'>
+      <div className='container mx-auto  flex items-center justify-center pt-5'>
             <button className="bg-[#9598e9] hover:bg-[#9598e9] text-black md:text-xl lg:text-xl xl:text-2xl my-3 font-bold md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
             {t('Book Now!')}
             </button>
