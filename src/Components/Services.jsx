@@ -22,8 +22,8 @@ export default function Services() {
 
         {/* Text Column */}
         <div className="space-y-6">
-          <h2 className="md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#9598e9] dark:#008239 leading-tight">
-          {t('Services')}
+          <h2 className="md:text-2xl lg:text-2xl xl:text-3xl font-bold text-[#9598e9] dark:#008239 leading-tight">
+          {t('Acompaniamiento tanatologico')}
           </h2>
           
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
@@ -40,8 +40,8 @@ export default function Services() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Text Column */}
                 <div className="space-y-6">
-          <h2 className="md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#9598e9] dark:#008239 leading-tight">
-          {t('Services')}
+                <h2 className="md:text-2xl lg:text-2xl xl:text-3xl font-bold text-[#9598e9] dark:#008239 leading-tight">     
+                       {t('Acompaniamiento por duelo ante sucidio')}
           </h2>
           
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
@@ -103,6 +103,62 @@ dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio digniss
             className="mx-auto lg:w-3/4 xl:w-full h-auto rounded-lg shadow-2xl object-cover"
           />
         </div>         
+      </div>
+    </section>
+    <section className="py-16 bg-white dark:bg-white">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Image Column */}
+        <div className="order-1 md:order-first">
+          <img 
+            src={'https://placehold.co/600x200'}
+            alt="Section Description" 
+            className="mx-auto lg:w-3/4 xl:w-full h-auto rounded-lg shadow-2xl object-cover"
+          />
+        </div>
+
+        {/* Text Column */}
+        <div className="space-y-6">
+          <h2 className="md:text-2xl lg:text-2xl xl:text-3xl font-bold text-[#9598e9] dark:#008239 leading-tight">
+          {t('Grupos de apoyo en el duelo por muerte normal')}
+          </h2>
+          
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    {t('FL Arizona Pro Landscaping LLC is a landscaping company serving the Tucson, Arizona area, offering a comprehensive range of services for both commercial and residential clients. Their service offerings include: Yard Maintenance, Pavers Installation, Grass and Artificial Grass Services, Irrigation System Installation and Repairs, Planting and Pruning, Palm and Tree Services, Gravel Work.')}
+          </p>
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+          {t('The company provides flexible service options, including one-time, weekly, and monthly service packages. Customers can contact them directly at 520-289-7508 or via email at arizonaprolandcaping@gmail.com. They emphasize affordable pricing and offer free estimates to potential clients in the Tucson metropolitan area.')}
+          </p>
+          
+        </div>
+      </div>
+    </section>
+    <section className="w-full py-16 bg-white dark:bg-white">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                {/* Text Column */}
+                <div className="space-y-6">
+                <h2 className="md:text-2xl lg:text-2xl xl:text-3xl font-bold text-[#9598e9] dark:#008239 leading-tight">     
+                       {t('Grupo de perdida por suicidio')}
+          </h2>
+          
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    {t('FL Arizona Pro Landscaping LLC is a landscaping company serving the Tucson, Arizona area, offering a comprehensive range of services for both commercial and residential clients. Their service offerings include: Yard Maintenance, Pavers Installation, Grass and Artificial Grass Services, Irrigation System Installation and Repairs, Planting and Pruning, Palm and Tree Services, Gravel Work.')}
+          </p>
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+          {t('The company provides flexible service options, including one-time, weekly, and monthly service packages. Customers can contact them directly at 520-289-7508 or via email at arizonaprolandcaping@gmail.com. They emphasize affordable pricing and offer free estimates to potential clients in the Tucson metropolitan area.')}
+          </p>
+          
+        </div>
+        
+        {/* Image Column */}
+        <div className="order-1 md:order-last">
+          <img 
+            src={'https://placehold.co/600x200'}
+            alt="Section Description" 
+            className="mx-auto lg:w-3/4 xl:w-full h-auto rounded-lg shadow-2xl object-cover"
+          />
+        </div>
+
+
       </div>
     </section>
     </div>

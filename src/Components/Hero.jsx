@@ -10,12 +10,12 @@ export default function Hero() {
 
         const handleCLick = ()=> {
             // Replace 'https://example.com/agendar' with your actual scheduling link
-            window.open('https://wa.me/15202897508', '_blank', 'noopener,noreferrer');
+            window.open('https://wa.me/15202733455', '_blank', 'noopener,noreferrer');
         }
 
 
        return (
-    <div id='inicio' className='relative overflow-hidden'>
+    <div id='home' className='relative overflow-hidden'>
       <section className="bg-[transparent] mt-[120px]">
       <div  className='bg-white container mx-auto h-[600px]' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
         <div className="w-full pr-[90px] pt-8  flex items-start justify-end">

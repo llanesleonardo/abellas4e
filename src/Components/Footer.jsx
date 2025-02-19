@@ -29,7 +29,7 @@ export default function Footer() {
             <li></li>
             <li>Privacy policy</li>
             <li>Terms of service</li>
-            <li></li>
+        
           </ul>
         </div>
         <div className="container mx-auto px-4 text-left pb-[50px]">
@@ -38,8 +38,8 @@ export default function Footer() {
               <FaPhone className="text-[black] p-2 text-5xl font-bold bg-[#9598e9] rounded-full" />
             </div>
             <div className="flex-col items-center justify-center">
-              <h1 className="text-[white] text-4xl font-bold">Contact Us</h1>
-              <h1 className="text-[white] text-4xl font-bold">(501)-456-7789</h1>
+              <h1 className="text-[white] text-3xl font-bold">Contact Us</h1>
+              <h1 className="text-[white] text-3xl font-bold">(520)-273-3455</h1>
             </div>
           </div>
           <div className="flex items-center justify-center gap-5">

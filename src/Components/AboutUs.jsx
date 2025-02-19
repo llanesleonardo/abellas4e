@@ -9,7 +9,7 @@ export default function AboutUs() {
         const { langCode } = useContext(SystemContext);
       
   return (
-    <div id='nosotros' className='bg-white'>
+    <div id='about' className='bg-white'>
        <section className="w-full py-16 bg-white dark:bg-white">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Image Column */}

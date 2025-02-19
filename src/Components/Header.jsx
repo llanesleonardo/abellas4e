@@ -20,13 +20,13 @@ export default function Header() {
   ];
 
   const navItems = [
-    { href: "#inicio", text: t('Home') },
-    { href: "#nosotros", text: t('About Us') },
-    { href: "#servicios", text: t('Services') },
+    { href: "#home", text: t('Home') },
+    { href: "#about", text: t('About') },
+    { href: "#services", text: t('Services') },
     { href: "#testimonies", text: t('Testimonies') },
-    { href: "#methodologies", text: t('Methodology') },
-    { href: "#faq", text: t('FAQ') },
+    { href: "#method", text: t('Methodology') },
     { href: "#contact", text: t('Contact')},
+    { href: "#faq", text: t('FAQ') },
   ];
 //    { icon: instagram, href: '#' },
 //{ icon: facebook, href: '#' }

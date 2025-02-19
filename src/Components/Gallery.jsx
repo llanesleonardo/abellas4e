@@ -53,8 +53,15 @@ export default function ImageGrid() {
     }
   ];
 
+
+  const handleCLick = ()=> {
+    // Replace 'https://example.com/agendar' with your actual scheduling link
+    window.open('https://wa.me/15202733455', '_blank', 'noopener,noreferrer');
+}
+
+
   return (
-    <div id='galeria' className=" px-8 py-16">
+    <div id='about' className=" px-8 py-16">
       <div className="container mx-auto">    
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {items.map((item) => (
@@ -62,8 +69,21 @@ export default function ImageGrid() {
         ))}
       </div>
       </div>
+      <div className='container mx-auto  flex-col items-center justify-center pt-5'>
+         <p className='text-black text-center font-bold'>
+                        Si estás atravesando un duelo y te sientes abatido, triste o deprimido porque perdiste a
+            un ser querido o algún familiar ha sido diagnosticado con alguna enfermedad terminal,
+            no dudes en buscar ayuda profesional. </p>
+            <br />
+            <p className='text-black text-center font-bold'>
+            Evitar el sufrimiento o el dolor emocional no es sano, solo nos vuelve más vulnerables
+            ante otras pérdidas, generando un mayor malestar emocional y enfermedades.
+                        </p>
+     
+            </div>
       <div className='container mx-auto  flex items-center justify-center pt-5'>
-            <button className="bg-[#9598e9] hover:bg-[#9598e9] text-black md:text-xl lg:text-xl xl:text-2xl my-3 font-bold md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
+  
+            <button onClick={handleCLick} className=" bg-[#9598e9] hover:bg-[#9598e9] text-black md:text-xl lg:text-xl xl:text-2xl my-3 font-bold md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
             {t('Book Now!')}
             </button>
             </div>

@@ -16,10 +16,10 @@ export default function Testimonies() {
       window.open('https://wa.me/15202897508', '_blank', 'noopener,noreferrer');
   }
   return (
-    <div className=' relative bg-[white] pt-[100px]'>
+    <div id='testimonies' className=' relative bg-[white] pt-[100px]'>
       <div className=" flex items-center justify-center relative pb-5">
-        <div className="container mx-auto px-4 text-left pb-[100px]">
-          <h1 className="text-[#9598e9] text-8xl font-bold mb-0">{t('Testimonies')}</h1>
+        <div className="container mx-auto  text-left pb-[50px]">
+          <h1 className="text-[#9598e9] text-6xl font-bold mb-0">{t('Testimonies')}</h1>
         </div>
       </div>
       <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-[10px]">
