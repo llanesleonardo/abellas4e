@@ -63,11 +63,11 @@ export default function ImageGrid() {
   return (
     <div id='about' className=" px-5 py-6 md:py-16">
       <div className="container mx-auto"> 
-      <div className='bg-white h-[300px] w-[350px]  md:w-full md:h-[600px] mx-auto' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+      <div className='block bg-white h-[300px] w-[350px]  md:hidden lg:hidden xl:hidden mx-auto' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
             <div className="absolute bg-black bg-opacity-10 flex items-center justify-center rounded-none">
             </div>
         </div>
-      <div className="hidden  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:block" >
+      <div className="hidden md:grid md:grid-cols-3 gap-4  " >
         {items.map((item) => (
           <GridItem key={item.id} images={item.images}/>
         ))}

@@ -23,11 +23,11 @@ export default function Faq() {
         <div className="container mx-auto px-4 text-left">
         </div>
       </div>
-      <div className="container mx-auto flex-col justify-left items-center flex-wrap  md:flex md:gap-[100px]  md:flex-nowrap">
-          <div className="flex-1 flex-col justify-center items-center">
+      <div className="container mx-auto flex flex-col justify-left items-center flex-wrap  md:flex-row md:gap-[100px]  md:flex-nowrap">
+          <div className="flex-1 flex-col justify-center items-center ">
           <p className='font-bold text-center'>{t('Frequently asked questions')}</p>
           <h1 className="text-[black] text-center text-6xl md:text-8xl font-bold mb-0 md:text-left">{t('FAQs')}</h1>
-          <div className='flex items-center justify-center md:items-center md:justify-start'>
+          <div className='flex items-center justify-center md:flex-row md:items-center md:justify-center'>
             <button onClick={handleCLick} className="bg-[black] hover:bg-[black] text-white text-xl py-4 px-6 my-3 font-bold md:text-xl lg:text-xl xl:text-2xl md:py-4 md:px-6 lg:py-3 lg:px-6 xl:py-3 xl:px-6 rounded-full">
             {t('Book Now!')}
             </button>
