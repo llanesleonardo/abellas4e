@@ -24,7 +24,7 @@ export default function Testimonies() {
       </div>
       <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-[10px]">
           <div className="w-[300px] flex-col justify-center items-center">
-              <div ><img className="rounded-md" src={'https://placehold.co/350x500'} /></div>
+              <div ><img className="rounded-md" src={'https://placehold.co/350x350'} /></div>
               <div><p className='text-black text-justify'>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
 nonummy nibh euismod tincidunt
@@ -34,7 +34,7 @@ erat volutpat.
           </div>
 
           <div className="w-[300px] flex-col justify-center items-center">
-              <div><img className="rounded-md" src={'https://placehold.co/350x500'} /></div>
+              <div><img className="rounded-md" src={'https://placehold.co/350x350'} /></div>
               <div><p className='text-black text-justify'>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
 nonummy nibh euismod tincidunt
@@ -44,7 +44,7 @@ erat volutpat.
           </div>
 
           <div className="w-[300px] flex-col justify-center items-center">
-              <div><img className="rounded-md" src={'https://placehold.co/350x500'} /></div>
+              <div><img className="rounded-md" src={'https://placehold.co/350x350'} /></div>
               <div><p className='text-black text-justify'>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
 nonummy nibh euismod tincidunt
@@ -53,7 +53,7 @@ erat volutpat.
                 </p></div>
           </div>
           <div className="w-[300px] flex-col justify-center items-center">
-              <div><img className="rounded-md" src={'https://placehold.co/350x500'} /></div>
+              <div><img className="rounded-md" src={'https://placehold.co/350x350'} /></div>
               <div><p className='text-black text-justify'>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
 nonummy nibh euismod tincidunt

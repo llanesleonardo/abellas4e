@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { SystemContext } from "../Contexts/SystemContext.jsx"
 import Logo from "../Components/Logo.jsx"
 import MobileMenu from './MobileMenu'
+import { FaWhatsapp,FaPhone, FaFacebook, FaInstagram, FaYoutube,  FaMapMarker,FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
   
@@ -14,9 +15,9 @@ export default function Header() {
   }
   
   const menuItems = [
-    { icon: null, title: t('Call Us'), content: '+1 (520) 289-7508' },
-    { icon: null, title: t('Visit Us'), content: 'Tucson area , AZ.' },
-    { icon: null, title: t('Contact Us'), content: 'arizonaprolandcaping@gmail.com' },
+    { icon: <FaPhone className="text-[black] p-2 text-3xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />, title: t('Call Us'), content: '+1 (520) 289-7508' },
+    { icon: <FaMapMarker className="text-[black] p-2 text-3xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />, title: t('Visit Us'), content: 'Tucson area , AZ.' },
+    { icon:  <FaEnvelope className="text-[black] p-2 text-3xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />, title: t('Contact Us'), content: 'anabellasforever@gmail.com' },
   ];
 
   const navItems = [
@@ -31,7 +32,10 @@ export default function Header() {
 //    { icon: instagram, href: '#' },
 //{ icon: facebook, href: '#' }
   const socialIcons = [
-    { icon: null, href: 'https://wa.me/15202897508' },
+    { icon: <FaWhatsapp className="text-[black] mt-5 p-2 text-4xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />, href: 'https://wa.me/15202897508' },
+    { icon:<FaFacebook className="text-[black] mt-5 p-2 text-4xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />,href: 'https://wa.me/15202897508' },
+      { icon: <FaInstagram className="text-[black] mt-5 p-2 text-4xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />  ,href: 'https://wa.me/15202897508' },            
+        { icon:<FaYoutube className="text-[black] mt-5 p-2 text-4xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />,href: 'https://wa.me/15202897508' },
   ];
 
   return (
@@ -43,7 +47,7 @@ export default function Header() {
         <div className="container mx-auto  lg:pb-0 xl:pb-0">      
           <div className='flex items-center justify-around'>
           <div className=' md:hidden lg:block xl:block lg:w-[300px] xl:w-[540px] diagonal-split-gray py-3'>
-          <Logo width={60} height={84}/>
+          <Logo className="hidden md:block lg:block xl:block" width={60} height={84}/>
 </div>   
             <div className='flex-grow'>
           
@@ -54,8 +58,7 @@ export default function Header() {
                   ))}
                 </ul>
               </nav>
-              <MobileMenu 
-                logoSrc={null} 
+              <MobileMenu  
                 menuItems={menuItems}
                 navItems={navItems}
                 socialIcons={socialIcons}

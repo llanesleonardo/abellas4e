@@ -56,7 +56,7 @@ export default function Methodology() {
           </div>
 
           <div className="block flex-col justify-center items-center md:hidden">
-              <div className='flex-1'><img className="rounded-md my-5 w-[350px]" src={'https://placehold.co/350x250'} /></div>
+              <div className='flex-1'><img className="mx-auto rounded-md my-5 w-[350px]" src={'https://placehold.co/350x250'} /></div>
           </div>
           <div className="hidden md:flex-col md:justify-center md:items-center md:block">
               <div className='flex-1'><img className="rounded-md my-5" src={'https://placehold.co/350x250'} /></div>
