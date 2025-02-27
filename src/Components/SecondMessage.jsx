@@ -18,8 +18,8 @@ export default function SecondMessage() {
   return (
     <div className='relative bg-[#111019] py-[100px]'>
       <div className=" flex items-center justify-center relative pb-5">
-        <div className="container mx-auto px-4 text-center pb-[100px]">
-          <h1 className="text-white text-6xl font-bold mb-0">{t('Lorem ipsum dolor sit amet,consectetuer adipiscing')}</h1>
+        <div className="container mx-auto px-4 text-center pb-[50px] md:pb-[100px]">
+          <h1 className="text-white mb-0 font-bold  text-4xl md:text-6xl  ">{t('Lorem ipsum dolor sit amet,consectetuer adipiscing')}</h1>
         </div>
       </div>
       <div className="container mx-auto  flex justify-center items-center flex-wrap gap-[100px]">

@@ -65,7 +65,7 @@ export default function Services() {
 
       </div>
     </section>
-    <section className="w-full bg-white dark:bg-white ">
+    <section className="hidden md:block md:w-full bg-white dark:bg-white ">
       <div className="container mx-auto px-4 flex justify-center items-center">
         {/* Image Column */}
         <div className="flex-1 bg-[#9598e9] rounded-md">
@@ -82,7 +82,7 @@ export default function Services() {
         </div>
       </div>
     </section>
-    <section className="w-full bg-white dark:bg-white">
+    <section className="hidden  md:block md:w-full bg-white dark:bg-white">
       <div className="container mx-auto px-4 flex justify-center items-center">
         {/* Image Column */}
         <div className="flex-1 bg-[white] rounded-md">

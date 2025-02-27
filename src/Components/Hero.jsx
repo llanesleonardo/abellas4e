@@ -17,16 +17,16 @@ export default function Hero() {
        return (
     <div id='home' className='relative overflow-hidden'>
       <section className="bg-[transparent] mt-[120px]">
-      <div  className='bg-white container mx-auto h-[600px]' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
-        <div className="w-full pr-[90px] pt-8  flex items-start justify-end">
+      <div  className='bg-white h-[400px] w-[350px] md:w-full md:h-[600px] mx-auto' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+        <div className="md:pr-[90px] md:pt-8  flex items-start justify-center md:items-start md:justify-end">
            <div className=" ">
-            <div className='flex items-start justify-end flex-wrap '>
-            <h1 className="text-[6rem] font-bold text-black w-[300px] leading-[5.5rem]">
+            <div className='flex items-center justify-center flex-wrap md:items-start md:justify-end'>
+            <h1 className=" text-center text-[4rem]  font-bold text-black w-[300px] leading-[4rem] md:text-[6rem] md:leading-[5.5rem]">
                         {t('Lorem Ipsum')}
                         </h1>
             </div>
-            <div className='flex items-start justify-end'>
-            <button onClick={handleCLick} className="bg-[#9598e9] hover:bg-[#9598e9] text-black md:text-xl lg:text-xl xl:text-2xl my-3 font-bold md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
+            <div className='hidden md:flex md:items-center md:justify-center md:items-start  md:justify-end'>
+            <button onClick={handleCLick} className="bg-[#9598e9] hover:bg-[#9598e9] text-black text-xl  my-3 font-bold py-4 px-6 md:text-xl lg:text-xl xl:text-2xl md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
             {t('Book Now!')}
             </button>
             </div>

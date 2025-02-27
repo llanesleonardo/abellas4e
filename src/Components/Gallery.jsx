@@ -61,9 +61,13 @@ export default function ImageGrid() {
 
 
   return (
-    <div id='about' className=" px-8 py-16">
-      <div className="container mx-auto">    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div id='about' className=" px-5 py-6 md:py-16">
+      <div className="container mx-auto"> 
+      <div className='bg-white h-[300px] w-[350px]  md:w-full md:h-[600px] mx-auto' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+            <div className="absolute bg-black bg-opacity-10 flex items-center justify-center rounded-none">
+            </div>
+        </div>
+      <div className="hidden  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:block" >
         {items.map((item) => (
           <GridItem key={item.id} images={item.images}/>
         ))}
@@ -83,7 +87,7 @@ export default function ImageGrid() {
             </div>
       <div className='container mx-auto  flex items-center justify-center pt-5'>
   
-            <button onClick={handleCLick} className=" bg-[#9598e9] hover:bg-[#9598e9] text-black md:text-xl lg:text-xl xl:text-2xl my-3 font-bold md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
+            <button onClick={handleCLick} className=" bg-[#9598e9] hover:bg-[#9598e9] text-black text-xl  my-3 px-6 py-4 font-bold md:text-xl lg:text-xl xl:text-2xl md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
             {t('Book Now!')}
             </button>
             </div>

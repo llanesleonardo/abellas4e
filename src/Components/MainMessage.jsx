@@ -18,7 +18,7 @@ export default function MainMessage() {
       <div className=" flex items-center justify-center relative pb-5">
         <div className="container mx-auto px-4 text-center py-10">
           <p className='font-bold text-3xl mt-5'>{t('About Us')}</p>
-          <h1 className="text-6xl font-bold mb-0">{t('Lorem ipsum dolor sit amet,consectetuer adipiscing')}</h1>
+          <h1 className="text-4xl font-bold mb-0 mt-5 md:text-6xl ">{t('Lorem ipsum dolor sit amet,consectetuer adipiscing')}</h1>
         </div>
       </div>
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
