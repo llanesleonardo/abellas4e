@@ -19,10 +19,10 @@ export default function Methodology() {
     <div id='method' className=' bg-[white] py-[100px]'>
       <div className=" container mx-auto pb-5">
         <div className=" hidden pb-[25px] md:pb-[50px]  md:text-left md:block">
-          <h1 className="text-[#9598e9] text-4xl  md:text-6xl font-bold mb-0 ">{t('Methodology')}</h1>
+          <h1 className="text-[#9598e9] text-4xl  md:text-6xl font-bold mb-0 ">{t('Metodologia')}</h1>
         </div>
         <div className=" block pb-[25px] md:pb-[50px] text-center md:text-left md:hidden ">
-          <h1 className="text-[#9598e9] text-4xl  md:text-6xl font-bold mb-0 ">{t('Methodology')}</h1>
+          <h1 className="text-[#9598e9] text-4xl  md:text-6xl font-bold mb-0 ">{t('Metodologia')}</h1>
         </div>
       </div>
       <div className="container mx-auto flex flex-col justify-center items-center flex-wrap md:flex-row md:justify-around md:items-start md:gap-[100px] md:flex-nowrap">
@@ -34,28 +34,27 @@ export default function Methodology() {
             </div>
             <hr/>
 
-            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-20 md:py-10'>
+            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-10 md:py-10'>
             <h3 className='md:flex-1 text-[#9598e9] text-2xl'>1) Evaluacion inicial</h3>
-            <p className='pt-4 md:flex-2 md:w-[600px] font-bold'>El proceso comienza con una evaluación inicial para comprender la situación
-                específica de la persona en duelo, sus necesidades y sus objetivos.</p>
+            <p className='pt-4 md:flex-2 md:w-[600px] font-bold text-justify'>El proceso comienza con una evaluación inicial para comprender la
+situación específica de la persona en duelo, sus necesidades y sus objetivos.</p>
             </div>
             <hr/>
-            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-20 md:py-10'>           
-               <h3 className='flex-1 text-[#9598e9] text-2xl'>2) Coaching</h3>
-            <p className='pt-4 md:flex-2 md:w-[600px] font-bold'>Las sesiones de coaching tanatológico son espacios de conversación y reflexión donde
-                la persona en duelo puede explorar sus emociones, pensamientos y experiencias.</p>
+            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-10 md:py-10'>           
+               <h3 className='flex-1 text-[#9598e9] text-2xl'>2) Acompaniamiento grupal</h3>
+            <p className='pt-4 md:flex-2 md:w-[600px] font-bold text-justify'>El acompañamiento en los grupos de apoyo en el duelo son espacios de conversación y reflexión donde las personas pueden explorar sus
+emociones, pensamientos y experiencias, las cosas inconclusas…Los buenos recuerdos y las acciones para sentirse mejor en la vida cotidiana.</p>
             </div>
             <hr/>
-            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-20 md:py-10'>               
-               <h3 className='md:flex-1 text-[#9598e9] text-2xl'>3) Herramientas y tecnicas</h3>
-                <p className='pt-4 md:flex-2 md:w-[600px] font-bold'>El coach tanatológico utiliza preguntas poderosas y técnicas específicas para facilitar
-                la introspección y el autoconocimiento.</p>
+            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-10 md:py-10'>               
+               <h3 className='md:flex-1 text-[#9598e9] text-2xl'>3) Introspeccion y autoconocimiento</h3>
+                <p className='pt-4 md:flex-2 md:w-[600px] font-bold text-justify'>En el acompañamiento, se utilizan preguntas poderosas y técnicas específicas para facilitar la introspección y el autoconocimiento para resignificar el sufrimiento emocional. Darle otro sentido a sus vidas.</p>
             </div>
             <hr/>
-            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-20 md:py-10'>           
-               <h3 className='md:flex-1 text-[#9598e9] text-2xl'>4) Seguimiento y evaluacion</h3>
-            <p className='pt-4 md:flex-2 md:w-[600px] font-bold'>El proceso incluye un seguimiento continuo para evaluar el proceso y ajustar el plan
-            de acompañamiento según sea necesario.</p>
+            <div className='flex flex-col justify-center items-center py-5 md:flex-row md:justify-around md:items-center md:gap-10 md:py-10'>           
+               <h3 className='md:flex-1 text-[#9598e9] text-2xl'>4) Seguimiento continuo</h3>
+            <p className='pt-4 md:flex-2 md:w-[600px] font-bold text-justify'>El proceso incluye un seguimiento continuo para evaluar el proceso y
+            ajustar el plan del acompañamiento según sea necesario.</p>
             </div>
           </div>
           </div>          <div className="block  flex-col justify-center items-center md:hidden">
