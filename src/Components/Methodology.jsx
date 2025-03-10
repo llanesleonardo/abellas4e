@@ -3,7 +3,9 @@ import { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SystemContext } from "../Contexts/SystemContext.jsx"
 import Logo from "./Logo.jsx"
-
+import m1 from "../assets/Photos/1.png"
+import m2 from "../assets/Photos/2.png"
+import m3 from "../assets/Photos/3.png"
 
 export default function Methodology() {
 
@@ -18,7 +20,7 @@ export default function Methodology() {
   return (
     <div id='method' className=' bg-[white] py-[100px]'>
       <div className=" container mx-auto pb-5">
-        <div className=" hidden pb-[25px] md:pb-[50px]  md:text-left md:block">
+        <div className=" hidden pb-[25px] md:pb-[50px]  md:text-center md:block">
           <h1 className="text-[#9598e9] text-4xl  md:text-6xl font-bold mb-0 ">{t('Metodologia')}</h1>
         </div>
         <div className=" block pb-[25px] md:pb-[50px] text-center md:text-left md:hidden ">
@@ -61,9 +63,9 @@ emociones, pensamientos y experiencias, las cosas inconclusas…Los buenos recue
               <div className='flex-1'><img className="mx-auto rounded-md my-5 w-[350px]" src={'https://placehold.co/350x250'} /></div>
           </div>
           <div className="md:flex hidden md:flex-1 md:flex-col md:justify-end md:items-center md:block md:pl-6">
-              <div className='flex-1'><img className="rounded-md my-5" src={'https://placehold.co/350x250'} /></div>
-              <div className='flex-1' ><img className="rounded-md my-5" src={'https://placehold.co/350x250'} /></div>
-              <div className='flex-1'><img className="rounded-md my-5" src={'https://placehold.co/350x250'} /></div>
+              <div className='flex-1'><img className="rounded-md my-5" src={m1} /></div>
+              <div className='flex-1' ><img className="rounded-md my-5" src={m2} /></div>
+              <div className='flex-1'><img className="rounded-md my-5" src={m3} /></div>
           </div>
 
       </div>

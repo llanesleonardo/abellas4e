@@ -21,12 +21,12 @@ export default function Header() {
   ];
 
   const navItems = [
-    { href: "#home", text: t('Home') },
-    { href: "#about", text: t('About') },
-    { href: "#services", text: t('Services') },
-    { href: "#testimonies", text: t('Testimonies') },
-    { href: "#method", text: t('Methodology') },
-    { href: "#contact", text: t('Contact')},
+    { href: "#home", text: t('Inicio') },
+    { href: "#about", text: t('Nosotros') },
+    { href: "#services", text: t('Servicios') },
+    { href: "#testimonies", text: t('Testimonios') },
+    { href: "#method", text: t('Metodologia') },
+    { href: "#contact", text: t('Contacto')},
     { href: "#faq", text: t('FAQ') },
   ];
 //    { icon: instagram, href: '#' },

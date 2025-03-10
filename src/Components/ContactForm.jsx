@@ -44,14 +44,14 @@ const ContactForm = () => {
 
       // Validation
       const validationErrors = {};
-      if (!fullName.trim()) validationErrors.fullName = "Name is required.";
-      if (!subject.trim()) validationErrors.subject = "Subject is required.";
+      if (!fullName.trim()) validationErrors.fullName = "El Nombre es requerido.";
+      if (!subject.trim()) validationErrors.subject = "El Titulo de requerido.";
       if (!email) {
         validationErrors.email = "El Correo electrónico es requerido.";
       } else if (!/\S+@\S+\.\S+/.test(email)) {
         validationErrors.email = "Formato no es válido.";
       }
-      if (!phoneNumber.trim()) validationErrors.phoneNumber = "Phone number is required.";
+      if (!phoneNumber.trim()) validationErrors.phoneNumber = "El telefono es requierido.";
   
       if (Object.keys(validationErrors).length > 0) {
         setErrors(validationErrors);
@@ -94,7 +94,7 @@ const ContactForm = () => {
        // If the API call is successful, proceed with the redirect process
        setTimeout(() => {
         setStatusMessage(
-          "THANK YOU FOR SUBMITTING YOUR DATA."
+          "Gracias por enviarnos un mensaje. Estaremos en contacto  con usted lo mas pronto posible."
         );
     
         // Start redirect after displaying the second message
@@ -134,7 +134,7 @@ const ContactForm = () => {
   return (
     <div id="contact" className="bg-[#111019] py-10">
     <h1 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
-            {t('Contact Us')}
+            {t('Mandanos un mensaje')}
        </h1> 
     <form className="max-w-2xl mx-auto p-6 " onSubmit={handleSubmit}>
       <div className="grid grid-cols-2 gap-4 mb-4">
@@ -142,7 +142,7 @@ const ContactForm = () => {
           type="text"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
-          placeholder={t('Full Name')}
+          placeholder={t('Nombre completo')}
           className="w-full px-4 py-2 border rounded-md"
           required
         />
@@ -152,7 +152,7 @@ const ContactForm = () => {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder={t('Email')}
+          placeholder={t('Correo electronico')}
           className="w-full px-4 py-2 border rounded-md"
           required
         />
@@ -162,7 +162,7 @@ const ContactForm = () => {
           type="tel"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          placeholder={t("Phone Number")}
+          placeholder={t("Telefono")}
           className="w-full px-4 py-2 border rounded-md"
           required
         />
@@ -172,7 +172,7 @@ const ContactForm = () => {
           type="text"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          placeholder={t('Subject')}
+          placeholder={t('Titulo')}
           className="w-full px-4 py-2 border rounded-md"
         />
       </div>
@@ -180,13 +180,14 @@ const ContactForm = () => {
       <textarea
         value={messageText}
         onChange={(e) => setMessageText(e.target.value)}
-        placeholder={t('Comments')}
+        placeholder={t('Comentarios')}
         className="w-full px-4 py-2 border rounded-md h-32 mb-4"
         required
       />
       {errors.messageText && <span className="error">{errors.messageText}</span>}
 
       <div className="mb-4">
+        <small className='text-white'>* Su informacion es recibida y usada con total confidencialidad. </small>
         {/* ReCAPTCHA component */}
       </div>
 
@@ -194,12 +195,12 @@ const ContactForm = () => {
         type="submit" 
         className="w-full bg-white text-[#111019] py-3 rounded-lg hover:bg-custom-green transition duration-300 text-lg font-semibold"
       >
-        {t('SEND')}
+        {t('ENVIAR')}
       </button>
 
       {status === "error" && <div className="mt-4 text-red-500" dangerouslySetInnerHTML={{__html: message}} />}
       {errors.server && <span className="error">{errors.server}</span>}
-      {status === "success" && <div className="mt-4 text-green-500">{t('Form submitted successfully!')}</div>}
+      {status === "success" && <div className="mt-4 text-green-500">{t('La informacion fue enviada de manera exitosa!')}</div>}
     </form>
     </div>
   );

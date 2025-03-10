@@ -1,12 +1,12 @@
 import { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SystemContext } from "../Contexts/SystemContext.jsx"
-import g1 from '../assets/gallery/fl1.jpg'
-import g2 from '../assets/gallery/fl2.jpg'
-import g3 from '../assets/gallery/fl3.jpg'
-import g4 from '../assets/gallery/fl4.jpg'
-import g5 from '../assets/gallery/fl5.jpg'
-import g6 from '../assets/gallery/fl7.jpg'
+import img1 from '../assets/Photos/landing-anabellas forever-05.png'
+import img2 from '../assets/Photos/landing-anabellas forever-06.png'
+import img3 from '../assets/Photos/landing-anabellas forever-07.png'
+import img4 from '../assets/Photos/landing-anabellas forever-08.png'
+import img5 from '../assets/Photos/landing-anabellas forever-09.png'
+import img6 from '../assets/Photos/landing-anabellas forever-10.png'
 import Logo from "../assets/gallery/anabellas forever-transparent.png"
 
 const GridItem = ({  images }) => (
@@ -36,20 +36,20 @@ export default function ImageGrid() {
   const items = [
     { id: 1, 
         images:[
-            {id:1,imageUrl: 'https://placehold.co/600x200', title: '', height: 200},
-            {id:2, imageUrl: 'https://placehold.co/600x400', title: '', height: 400}
+            {id:1,imageUrl: img1, title: '', height: 200},
+            {id:2, imageUrl: img2, title: '', height: 400}
         ],
     },
     { id: 2, 
         images:[
-            {id:1,imageUrl: 'https://placehold.co/600x400', title: '', height: 400},
-            {id:2, imageUrl: 'https://placehold.co/600x200', title: '', height: 200}
+            {id:1,imageUrl: img3, title: '', height: 400},
+            {id:2, imageUrl: img4, title: '', height: 200}
         ],
     },
     { id: 3, 
         images:[
-            {id:1,imageUrl: 'https://placehold.co/600x200', title: '', height: 200},
-            {id:2, imageUrl: 'https://placehold.co/600x400', title: '', height: 400}
+            {id:1,imageUrl: img5, title: '', height: 200},
+            {id:2, imageUrl: img6, title: '', height: 400}
         ],
     }
   ];
