@@ -29,19 +29,53 @@ export default function Services() {
           <h2 className="md:text-2xl lg:text-2xl xl:text-3xl font-bold text-[#9598e9] dark:#008239 leading-tight text-center">
           {t('Acompañamiento por')}
           <br/>
-          {t('muerte normal')}
+          {t('muerte')}
           </h2>
         </div>
 
         {/* Text Column */}
         <div className="space-y-6">          
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-                    {t('FL Arizona Pro Landscaping LLC is a landscaping company serving the Tucson, Arizona area, offering a comprehensive range of services for both commercial and residential clients. Their service offerings include: Yard Maintenance, Pavers Installation, Grass and Artificial Grass Services, Irrigation System Installation and Repairs, Planting and Pruning, Palm and Tree Services, Gravel Work.')}
+                    {t(`
+                      Ofrecemos un servicio especializado de acompañamiento por muerte, brindando apoyo emocional a quienes atraviesan el dolor y la incertidumbre derivados de la pérdida de un ser querido.
+                      `)}
+          </p> 
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    {t(`
+                   Sabemos que enfrentar el duelo puede ser un proceso abrumador, por lo que nuestro objetivo es ofrecer conocimiento y orientación, tanto al cliente directo, sus familiares como para los amigos cercanos.
+                      `)}
+          </p>          
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+          <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de servcio:
+                      `)}
+                      </span>
+                    {t(`
+                         individual o grupal.
+                      `)}
+          </p>  
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Duración de la sesión:
+                      `)}
+                      </span>
+                    {t(`
+                         60 minutos.
+                      `)}
           </p>
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-          {t('The company provides flexible service options, including one-time, weekly, and monthly service packages. Customers can contact them directly at 520-289-7508 or via email at arizonaprolandcaping@gmail.com. They emphasize affordable pricing and offer free estimates to potential clients in the Tucson metropolitan area.')}
-          </p>
-          
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de sesión:
+                      `)}
+                      </span>
+                      
+                    {t(`
+                         Presencial.
+                      `)}
+          </p>          
         </div>
       </div>
     </section>
@@ -53,11 +87,48 @@ export default function Services() {
 
           
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-                    {t('FL Arizona Pro Landscaping LLC is a landscaping company serving the Tucson, Arizona area, offering a comprehensive range of services for both commercial and residential clients. Their service offerings include: Yard Maintenance, Pavers Installation, Grass and Artificial Grass Services, Irrigation System Installation and Repairs, Planting and Pruning, Palm and Tree Services, Gravel Work.')}
+          {t(`
+                      Ofrecemos un servicio especializado de acompañamiento a personas que han sobrevivido a la pérdida de un ser querido por suicidio. 
+                      Sabemos que enfrentar una tragedia de esta magnitud puede generar una variedad de emociones complejas, como el dolor, la culpa, la confusión y el aislamiento. 
+                      `)}
+             </p>
+             <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+          {t(`
+                                Nuestro objetivo es brindar apoyo integral y personalizado para ayudar a los sobrevivientes a sobrellevar este duelo tan particular.
+
+                   `)}
+             </p>
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+          <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de servcio:
+                      `)}
+                      </span>
+                    {t(`
+                         individual o grupal.
+                      `)}
+          </p>  
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Duración de la sesión:
+                      `)}
+                      </span>
+                    {t(`
+                         60 minutos.
+                      `)}
           </p>
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-          {t('The company provides flexible service options, including one-time, weekly, and monthly service packages. Customers can contact them directly at 520-289-7508 or via email at arizonaprolandcaping@gmail.com. They emphasize affordable pricing and offer free estimates to potential clients in the Tucson metropolitan area.')}
-          </p>
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de sesión:
+                      `)}
+                      </span>
+                      
+                    {t(`
+                         Presencial.
+                      `)}
+          </p> 
           
         </div>
         
@@ -98,11 +169,50 @@ export default function Services() {
         {/* Text Column */}
         <div className="space-y-6">          
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-                    {t('FL Arizona Pro Landscaping LLC is a landscaping company serving the Tucson, Arizona area, offering a comprehensive range of services for both commercial and residential clients. Their service offerings include: Yard Maintenance, Pavers Installation, Grass and Artificial Grass Services, Irrigation System Installation and Repairs, Planting and Pruning, Palm and Tree Services, Gravel Work.')}
+                    {t(`
+                   ofrecemos un servicio de acompañamiento especializado para personas que atraviesan el dolor por la pérdida de algo significativo en su vida, ya sea un ser querido, una mascota, un empleo, o cualquier otra pérdida que tenga un profundo impacto emocional. 
+                   
+                   `)}
+          </p>
+
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+
+          {t(`
+          Sabemos que las pérdidas no siempre están relacionadas con la muerte, y que el duelo por una pérdida significativa puede ser igualmente doloroso y transformador.
+                   
+                   `)}
           </p>
           <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
-          {t('The company provides flexible service options, including one-time, weekly, and monthly service packages. Customers can contact them directly at 520-289-7508 or via email at arizonaprolandcaping@gmail.com. They emphasize affordable pricing and offer free estimates to potential clients in the Tucson metropolitan area.')}
+          <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de servcio:
+                      `)}
+                      </span>
+                    {t(`
+                         individual o grupal.
+                      `)}
+          </p>  
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Duración de la sesión:
+                      `)}
+                      </span>
+                    {t(`
+                         60 minutos.
+                      `)}
           </p>
+          <p className="lg:text-base xl:text-xl text-black dark:text-black mb-6 text-justify">
+                    <span className='text-[#9598e9] font-bold'>  
+                    {t(`
+                         Tipo de sesión:
+                      `)}
+                      </span>
+                      
+                    {t(`
+                         Presencial.
+                      `)}
+          </p> 
           
         </div>
       </div>
@@ -120,7 +230,7 @@ export default function Services() {
         {/* Text Column */}
         <div className=" flex-2 ">
           <h2 className="py-[50px] px-[30px] md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[black] dark:#008239 leading-tight">
-          {t('Atreveré a vivir mejor.')}
+          {t('Atrévete a vivir mejor.')}
           </h2>          
         </div>
       </div>
@@ -135,7 +245,7 @@ export default function Services() {
                       <FaPhone className="text-[black] p-2 text-3xl font-bold bg-[#9598e9] rounded-full md:text-6xl" />
                     </div>
                     <div className="flex-col items-center justify-center">
-                      <h1 className="text-[#9598e9] text-2xl font-bold md:text-4xl">Contactanos</h1>
+                      <h1 className="text-[#9598e9] text-2xl font-bold md:text-4xl">Contáctame</h1>
                       <h1 className="text-[#9598e9] text-2xl font-bold md:text-4xl">(520)-273-3455</h1>
                     </div>
                   </div>        

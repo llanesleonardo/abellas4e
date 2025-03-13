@@ -12,6 +12,7 @@ import Methodology from '../Components/Methodology.jsx'
 import Faq from '../Components/Faq.jsx'
 import Footer from '../Components/Footer.jsx'
 import ContactForm from '../Components/ContactForm.jsx'
+import Markets from "../Components/Markets.jsx"
 
 export default function PublicHome() {
   return (
@@ -23,6 +24,7 @@ export default function PublicHome() {
         <ImageGrid />
         <SecondMessage />
         <Services />
+        <Markets />
         <ThirdMessage />
         <Testimonies />
         <Methodology />

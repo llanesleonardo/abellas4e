@@ -14,21 +14,23 @@ export default function Footer() {
           />
         </div>
         <div className="container text-2xl px-6 text-left pb-[40px] text-white font-bold md:pb-[10px] md:px-4">
-          <h2 className="text-white text-2xl font-bold underline ">Menu del sitio</h2>
+          <h2 className="text-white text-2xl font-bold underline ">Menú del sitio</h2>
           <ul className="pl-3">
-            <li>Servicios</li>
-            <li>Nosotros</li>
-            <li>Testimonios</li>
-            <li>Metodologia</li>
+          <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#testimonies">Testimonios</a></li>
+            <li><a href="#method">Metodología</a></li>
+            <li><a href="#contact">Contacto</a></li>
             
           </ul>
         </div>
         <div className="container text-2xl px-6 text-left pb-[40px]  text-white font-bold md:pb-[10px] md:px-4">
-        <h2 className="text-white text-2xl font-bold underline ">Menu de privacidad</h2>
+        <h2 className="text-white text-2xl font-bold underline ">Menú de privacidad</h2>
         <ul className="pl-3">
             <li></li>
-            <li>Politica de privacidad</li>
-            <li>Terminos de servicio</li>
+            <li>Política de privacidad</li>
+            <li>Términos de servicio</li>
         
           </ul>
         </div>
@@ -38,7 +40,7 @@ export default function Footer() {
               <FaPhone className="text-[black] p-2 text-3xl font-bold bg-[#9598e9] rounded-full md:text-5xl" />
             </div>
             <div className="flex-col items-center justify-center">
-              <h1 className="text-[white] text-2xl font-bold md:text-3xl">Contactanos</h1>
+              <h1 className="text-[white] text-2xl font-bold md:text-3xl">Contáctame</h1>
               <h1 className="text-[white] text-2xl font-bold md:text-3xl">(520)-273-3455</h1>
             </div>
           </div>
@@ -50,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mx-auto flex justify-center items-center flex-wrap gap-[100px]">
-            <p className="text-white font-bold"> Copyright 2025 | Todos los derechos reservados
+            <p className="text-white font-bold"> Copyright &copy; 2025 | Todos los derechos reservados
             </p>
       </div>
     </div>

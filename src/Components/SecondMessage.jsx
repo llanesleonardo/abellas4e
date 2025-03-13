@@ -67,7 +67,7 @@ export default function SecondMessage() {
 
           <div className=" flex items-center justify-center relative pb-5">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-[#9598e9] mb-0 font-bold  text-3xl md:text-3xl  ">{t('y mucha pasion por lo que hacemos.')}</h1>
+          <h1 className="text-[#9598e9] mb-0 font-bold  text-3xl md:text-3xl  ">{t('y mucha pasión por lo que hacemos.')}</h1>
         </div>
       </div>
       </div>

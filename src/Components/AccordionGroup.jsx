@@ -21,10 +21,8 @@ const Accordion = ({ title, children }) => {
 const AccordionGroup = () => {
   return (
     <div className="max-w-lg mx-auto mt-10 space-y-2">
-      <Accordion title="Cuanto cuesta el servicio?">$250 dolares el primer mes y despues
-      $110 por sesion. </Accordion>
-      <Accordion title="Section 2">Content for section 2.</Accordion>
-      <Accordion title="Section 3">Content for section 3.</Accordion>
+      <Accordion title="¿Cuánto se cobra por un servicio de acompañamiento?">$250 dólares el primer mes y después
+      $110 por sesión. </Accordion>
     </div>
   );
 };

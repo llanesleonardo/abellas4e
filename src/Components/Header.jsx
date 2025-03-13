@@ -25,7 +25,7 @@ export default function Header() {
     { href: "#about", text: t('Nosotros') },
     { href: "#services", text: t('Servicios') },
     { href: "#testimonies", text: t('Testimonios') },
-    { href: "#method", text: t('Metodologia') },
+    { href: "#method", text: t('Metodología') },
     { href: "#contact", text: t('Contacto')},
     { href: "#faq", text: t('FAQ') },
   ];

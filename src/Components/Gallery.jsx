@@ -80,13 +80,13 @@ export default function ImageGrid() {
 <div className=''>
 
 <div className='container mx-auto  flex-col items-center justify-center pt-5'>
-         <p className='text-black text-center font-bold text-2xl'>
+         <p className='text-black text-center font-bold text-2xl px-5'>
          Si estás atravesando un duelo y te sientes abatido, triste o deprimido
 porque perdiste a un ser querido o algún familiar ha sido diagnosticado
 con alguna enfermedad terminal, no dudes en buscar ayuda profesional
 </p>
             <br />
-            <p className='text-black text-center font-bold text-2xl'>
+            <p className='text-black text-center font-bold text-2xl px-5'>
             Evitar el sufrimiento o el dolor emocional no es sano, solo nos vuelve
 más vulnerables ante otras pérdidas, generando un mayor malestar
 emocional y enfermedades.
@@ -96,7 +96,7 @@ emocional y enfermedades.
             <div className='container mx-auto  flex items-center justify-center py-5'>
   
   <button onClick={handleCLick} className=" bg-[#9598e9] hover:bg-[#9598e9] text-black text-xl  my-3 px-6 py-4 font-bold md:text-xl lg:text-xl xl:text-2xl md:py-4 md:px-6 lg:py-4 lg:px-6 xl:py-5 xl:px-6 rounded-full">
-  {t('Mensame mensaje!')}
+  {t('Mándame mensaje!')}
   </button>
   </div>
 </div>
