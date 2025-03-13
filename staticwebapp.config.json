@@ -1,13 +1,13 @@
 {
     "routes": [
       {
-        "route": "/*",
+        "route": "*",
         "statusCode": 200
       }
     ],
     "navigationFallback": {
         "rewrite": "index.html",
-        "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+        "exclude": ["/images/*.{png,jpg,gif,jpeg}", "/css/*"]
       },
       "responseOverrides": {
         "404": {
