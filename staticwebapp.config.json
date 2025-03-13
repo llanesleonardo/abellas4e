@@ -1,0 +1,10 @@
+{
+  "routes": [
+    {
+      "route": "/event1",
+      "methods": [
+        "get"
+      ]
+    }
+  ]
+}
