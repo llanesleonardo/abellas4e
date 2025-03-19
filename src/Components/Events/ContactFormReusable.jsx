@@ -120,10 +120,10 @@ const ContactFormReusable = () => {
   // If loading, show spinner
   if (loading) {
     return (
-      <div id="reviews1" className="bg-[transparent] py-10 flex justify-center items-center">
+      <div id="reviews1" className="bg-[transparent] py-10 flex justify-center items-center h-m-screen">
         <div className="text-center">
-          <Spinner color="#9598e9" size={50} speed={1} />
-          <p className="mt-4 text-gray-600">{statusMessage}</p>
+          <Spinner color="#9598e9" size={100} speed={1} />
+          <p className="mt-4 text-[#9598e9]">{statusMessage}</p>
         </div>
       </div>
     );
@@ -187,7 +187,7 @@ const ContactFormReusable = () => {
 
       {status === "error" && <div className="mt-4 text-red-500" dangerouslySetInnerHTML={{__html: message}} />}
       {errors.server && <span className="error">{errors.server}</span>}
-      {status === "success" && <div className="mt-4 text-green-500">{t('La información fue enviada de manera exitosa!')}</div>}
+      {status === "success" && <div className="mt-4 text-[#9598e9]">{t('La información fue enviada de manera exitosa!')}</div>}
     </form>
     </div>
   );
