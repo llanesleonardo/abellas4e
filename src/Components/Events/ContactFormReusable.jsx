@@ -68,7 +68,8 @@ const ContactFormReusable = () => {
           "LNAME": "-",
           "PHONE": phoneNumber,
           "MMERGE8": '',
-          "MMERGE7": ''
+          "MMERGE7": '',
+          "MMERGE6": 'GRUPOAPOYODUELO'
         }
       }
 
@@ -132,7 +133,7 @@ const ContactFormReusable = () => {
     <div id="contact" className="bg-[transparent] py-10 flex flex-col flex-wrap justify-center items-center md:justify-center md:items-center md:min-h-screen">
       
     <h1 className="text-[#111019] text-4xl md:text-5xl font-bold text-center mb-12">
-            {t('Únete al evento')}
+            {t('Únete al grupo de apoyo al duelo')}
        </h1> 
     <form className="max-w-2xl mx-auto p-6 " onSubmit={handleSubmit}>
       <div className="grid grid-cols-1 gap-4 mb-4">

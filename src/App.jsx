@@ -15,7 +15,7 @@ function App() {
         <Router>
           <Routes>
           <Route index element={<PublicHome />} />
-          <Route  path='/event1' element={<Event1 />} />
+          <Route  path='/apoyo-duelo' element={<Event1 />} />
            </Routes>
         </Router>
       </SystemContextProvider>
