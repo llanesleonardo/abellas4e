@@ -16,7 +16,9 @@ const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
   return (
     <div className="lg:hidden">
       <div className="flex justify-between items-center px-4 py-2">
+      <a href='/' className='flex justify-center items-center'>
         <Logo className="block md:hidden lg:hidden xl:hidden" width={60} height={84}/>
+      </a>
       </div>
 
       {isOpen && (

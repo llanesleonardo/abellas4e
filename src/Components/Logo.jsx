@@ -3,6 +3,7 @@ import React from 'react'
 export default function Logo(props) {
   return (
     <div className=''>
+      
          <svg
     className="img-fluid"
     id="outputsvg"
