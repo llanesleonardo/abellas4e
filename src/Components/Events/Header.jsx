@@ -4,6 +4,7 @@ import { SystemContext } from "../../Contexts/SystemContext.jsx"
 import Logo from "../../Components/Logo.jsx"
 import MobileMenu from './MobileMenu'
 import { FaWhatsapp,FaPhone, FaFacebook, FaInstagram, FaYoutube,  FaMapMarker,FaEnvelope } from "react-icons/fa";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export default function Header() {
   
@@ -21,13 +22,9 @@ export default function Header() {
   ];
 
   const navItems = [
-    { href: "#home", text: t('Inicio') },
-    { href: "#about", text: t('Nosotros') },
-    { href: "#services", text: t('Servicios') },
-    { href: "#testimonies", text: t('Testimonios') },
-    { href: "#method", text: t('Metodología') },
-    { href: "#contact", text: t('Contacto')},
-    { href: "#faq", text: t('FAQ') },
+    { href: "/", text: t('Inicio') },
+    { href: "/about-me", text: t('Sobre Ana Maria') },
+    { href: "/apoyo-duelo", text: t('Apoyo a Duelo') },
   ];
 //    { icon: instagram, href: '#' },
 //{ icon: facebook, href: '#' }
@@ -51,7 +48,13 @@ export default function Header() {
 </div>   
             <div className='flex-grow'>
           
-        
+              <nav className='lg:px-4 xl:px-4 lg:pt-1 xl:pt-3 hidden lg:block'>
+                <ul className='flex items-center justify-end font-bold'>
+                  {navItems.map((item, index) => (
+                    <li key={index} className='px-6 py-0 text-base'><Link to={item.href} className="text-blue-500 hover:text-blue-700">{item.text}</Link></li>
+                  ))}
+                </ul>
+              </nav>
               <MobileMenu  
                 menuItems={menuItems}
                 navItems={navItems}

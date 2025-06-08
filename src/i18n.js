@@ -15,7 +15,7 @@ i18n
             loadPath: '/locales/{{lng}}/translation.json' // Path to translation files
         },
         lng: savedLanguage, // Default language
-        fallbackLng: 'en', // Fallback language
+        fallbackLng: 'es', // Fallback language
         interpolation: {
             escapeValue: false // React already does escaping
         }

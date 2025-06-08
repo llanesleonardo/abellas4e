@@ -4,6 +4,9 @@ import { SystemContext } from "../Contexts/SystemContext.jsx"
 import Logo from "../Components/Logo.jsx"
 import MobileMenu from './MobileMenu'
 import { FaWhatsapp,FaPhone, FaFacebook, FaInstagram, FaYoutube,  FaMapMarker,FaEnvelope } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Header() {
   
@@ -29,6 +32,12 @@ export default function Header() {
     { href: "#contact", text: t('Contacto')},
     { href: "#faq", text: t('FAQ') },
   ];
+
+  const navItems2 = [
+    { href: "/", text: t('Inicio') },
+    { href: "/about-me", text: t('Sobre Ana Maria') },
+    { href: "/apoyo-duelo", text: t('Apoyo Duelo') },
+  ];
 //    { icon: instagram, href: '#' },
 //{ icon: facebook, href: '#' }
   const socialIcons = [
@@ -50,7 +59,17 @@ export default function Header() {
           <Logo className="hidden md:block lg:block xl:block" width={60} height={84}/>
 </div>   
             <div className='flex-grow'>
-          
+            <nav className='lg:px-4 xl:px-4 lg:pt-1 xl:pt-3 hidden lg:block'>
+                <ul className='flex items-center justify-end font-bold'>
+                  {navItems2.map((item, index) => (
+                    <li key={index} className="flex items-center space-x-2 px-6 py-0 text-base">                     
+                    <a target='_blank' href={item.href}>{item.text}
+                    <FontAwesomeIcon icon={faExternalLinkAlt}  className='ml-5 text-[10px]'/>
+                      </a></li>
+                  ))}
+                </ul>
+              </nav>
+              <hr className='bg-[#9598e9] my-1 font-black h-[2px] hidden md:block lg:block'></hr>
               <nav className='lg:px-4 xl:px-4 lg:pt-1 xl:pt-3 hidden lg:block'>
                 <ul className='flex items-center justify-end font-bold'>
                   {navItems.map((item, index) => (
@@ -61,6 +80,7 @@ export default function Header() {
               <MobileMenu  
                 menuItems={menuItems}
                 navItems={navItems}
+                navItems2={navItems2}
                 socialIcons={socialIcons}
                 handleClick={handleClick}
               />

@@ -17,11 +17,11 @@ export default function Hero() {
        return (
     <div id='home' className='relative overflow-hidden'>
       <section className="bg-[transparent] mt-[120px]">
-      <div  className='bg-white h-[400px] w-[350px] md:w-full md:h-[600px] mx-auto container' style={{backgroundImage: `url(${HeroImage})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+      <div  className='bg-white h-[400px] w-[100%] md:w-full md:h-[600px] mx-auto container' style={{backgroundImage: `url(${HeroImage})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
         <div className=" flex items-start justify-center md:items-start md:justify-end h-full md:px-8">
            <div className=" ">
             <div className=' flex items-center justify-center flex-wrap md:items-center md:justify-center'>
-            <h1 className=" bg-[#9598e9]  bg-opacity-35 text-center text-[3rem]  font-bold text-black leading-[4rem] md:text-left md:text-[3rem] md:leading-[4rem] my-5 px-5 py-3 rounded-[50px]">
+            <h1 className=" bg-[#9598e9]  bg-opacity-35 text-center text-[2rem]  font-bold text-black leading-[4rem] md:text-left md:text-[3rem] md:leading-[4rem] my-5 px-5 py-3 rounded-[50px] ">
                         {t('Un camino de reconstrucción y esperanza')}
                         </h1>
             </div>

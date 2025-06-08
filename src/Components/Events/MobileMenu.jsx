@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { SystemContext } from "../../Contexts/SystemContext.jsx"
 import { MdOutlineMenu, MdClose } from 'react-icons/md';
 import Logo from "../../Components/Logo.jsx"
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
@@ -19,6 +20,9 @@ const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
       <a href='/' className='flex justify-center items-center'>
         <Logo className="block md:hidden lg:hidden xl:hidden" width={60} height={84}/>
       </a>
+      <button onClick={toggleMenu} className="p-2">
+          {isOpen ? <MdClose size={24} /> : <MdOutlineMenu size={24} />}
+        </button>
       </div>
 
       {isOpen && (
@@ -40,7 +44,7 @@ const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
             </li>
             {navItems.map((item, index) => (
               <li key={index} className="py-2 w-full">
-                <a href={item.href} className="block w-full">{item.text}</a>
+                <Link to={item.href} className="block w-full">{item.text}</Link>
               </li>
             ))}
             <li className="py-2 w-full flex justify-center space-x-4">

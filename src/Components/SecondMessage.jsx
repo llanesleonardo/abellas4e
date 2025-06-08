@@ -23,14 +23,14 @@ export default function SecondMessage() {
         </div>
       </div>
       <div className="container mx-auto  flex justify-center items-center flex-wrap gap-[100px]">
-          <div className="w-[250px] flex-col justify-center items-center">
+          <div className="w-[150px] md:w-[250px] flex-col justify-center items-center">
               <div ><div className='w-[50px] h-[50px] bg-[#9598e9] rounded-full'></div></div>
               <div><h1 className='text-white font-bold text-3xl py-5'>HONESTIDAD</h1></div>
               <div><p className='text-white text-justify'>
                 </p></div>
           </div>
 
-          <div className="w-[250px] flex-col justify-center items-center">
+          <div className="w-[150px] md:w-[250px] flex-col justify-center items-center">
           <div ><div className='w-[50px] h-[50px] bg-[#9598e9] rounded-full'></div></div>
 
               <div><h1 className='text-white font-bold text-3xl py-5'>RESPETO</h1></div>
@@ -40,7 +40,7 @@ export default function SecondMessage() {
 
 
 
-          <div className="w-[250px] flex-col justify-center items-center">
+          <div className="w-[150px] md:w-[250px] flex-col justify-center items-center">
           <div ><div className='w-[50px] h-[50px] bg-[#9598e9] rounded-full'></div></div>
 
               <div><h1 className='text-white font-bold text-3xl py-5'>RESILENCIA</h1></div>
@@ -53,7 +53,7 @@ export default function SecondMessage() {
           </div>
 
 
-          <div className="w-[250px] flex-col justify-center items-center">
+          <div className="w-[150px] md:w-[250px] flex-col justify-center items-center">
           <div ><div className='w-[50px] h-[50px] bg-[#9598e9] rounded-full'></div></div>
 
               <div><h1 className='text-white font-bold text-3xl py-5'>CONFIDENCIALIDAD</h1></div>

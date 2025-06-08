@@ -3,9 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { SystemContext } from "../Contexts/SystemContext.jsx"
 import { MdOutlineMenu, MdClose } from 'react-icons/md';
 import Logo from "../Components/Logo.jsx"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 
-const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
+const MobileMenu = ({ menuItems, navItems,navItems2, socialIcons, handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -23,6 +25,18 @@ const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
       </div>
 
       {isOpen && (
+      <div>
+            <nav className='pt-5 lg:px-4 xl:px-4 lg:pt-1 xl:pt-3  lg:hidden xl:hidden'>
+                <ul className='flex items-center justify-end font-bold'>
+                  {navItems2.map((item, index) => (
+                    <li key={index} className="flex items-center space-x-2 px-2 py-0 text-base">                     
+                    <a target='_blank' href={item.href}>{item.text}
+                    <FontAwesomeIcon icon={faExternalLinkAlt}  className='ml-2 text-[10px]'/>
+                      </a></li>
+                  ))}
+                </ul>
+              </nav>
+      <hr className='bg-[#9598e9] my-1 font-black h-[2px]'></hr>
         <nav className="bg-[#e0e0fb] shadow-md">
           <ul className="flex flex-col items-start p-4">
             {menuItems.map((item, index) => (
@@ -53,6 +67,7 @@ const MobileMenu = ({ menuItems, navItems, socialIcons, handleClick }) => {
             </li>
           </ul>
         </nav>
+        </div>
       )}
     </div>
   );

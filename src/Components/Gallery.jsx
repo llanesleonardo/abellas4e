@@ -64,7 +64,7 @@ export default function ImageGrid() {
   return (
     <div id='about' className=" ">
       <div className="container mx-auto"> 
-      <div className='block bg-white h-[300px] w-[350px]  md:hidden lg:hidden xl:hidden mx-auto' style={{backgroundImage: `url(${'https://placehold.co/1300x600'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
+      <div className='block bg-white h-[300px] w-[350px]  md:hidden lg:hidden xl:hidden mx-auto' style={{backgroundImage: `url(${'http://localhost:5173/src/assets/Photos/landing-anabellas%20forever-10.png'})`, backgroundSize: 'cover', backgroundPosition: 'center',borderRadius:'50px'}}>
             <div className="absolute bg-black bg-opacity-10 flex items-center justify-center rounded-none">
             </div>
         </div>
