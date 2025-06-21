@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="text-white font-bold text-center"> Copyright &copy; 2025 | Todos los derechos reservados
             </p>
       </div>
-            <div className="mx-auto flex justify-center items-center flex-wrap gap-[100px]">
+            <div className="mx-auto flex justify-center items-center flex-wrap gap-[100px] mx-10">
             <p className="text-white font-bold text-center"> <a href={dip71} target="_blank" className="underline">Juramento Etica Profesional Internacional Coach Federation ICF</a>
             </p>
       </div>

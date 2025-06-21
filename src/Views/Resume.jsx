@@ -38,6 +38,24 @@ import exp6 from "../assets/about/exp6.png";
 
 import dip71 from "../assets/certifications/dip71.png";
 
+const experiences = [
+  { src: exp1, alt: "Experience 1", legend: "Legend 1" },
+  { src: exp2, alt: "Experience 2", legend: "Legend 2" },
+  { src: exp3, alt: "Experience 3", legend: "Legend 3" },
+  { src: exp4, alt: "Experience 4", legend: "Legend 4" },
+  { src: exp5, alt: "Experience 5", legend: "Legend 5" },
+  { src: exp6, alt: "Experience 6", legend: "Legend 6" },
+];
+
+const images = [
+  { src: exp1, legend: "Legend 1" },
+  { src: exp2, legend: "Legend 2" },
+  { src: exp3, legend: "Legend 3" },
+  { src: exp4, legend: "Legend 4" },
+  { src: exp5, legend: "Legend 5" },
+  { src: exp6, legend: "Legend 6" },
+];
+
 const items = [
   {
     id: 1,
@@ -73,34 +91,46 @@ const ResumePage = () => {
     window.open("https://wa.me/15202897508", "_blank", "noopener,noreferrer");
   };
 
+  const [index, setIndex] = useState(0);
+
+  const handlePrev = () => {
+    setIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen ">
       <Header />
-      <main className="flex-grow">
-        <div className="pt-20">
-          <section className="rounded-xl flex flex-row items-start justify-evenly container mx-auto bg-[#111019] mt-10 py-10">
+      <main className="">
+        <div className="pt-1 md:pt-20">
+          <section className=" w-screen rounded-xl flex flex-col items-center justify-center md:flex-row md:items-start md:justify-evenly md:container md:mx-auto bg-[#111019] md:mt-10 md:py-10">
             <div
               id="profile-img"
-              className="flex flex-col items-center justify-center mt-10 grow-0 w-[50%]"
+              className="flex flex-col items-center justify-center mt-10 grow-0 w-[70%] md:w-[50%]"
             >
               <img
                 className="shadow-sm w-[300px] rounded-lg object-cover"
                 src={ana}
                 alt="Profile"
               />
-              <h1 className="text-[#9598e9] text-2xl font-bold mb-0 mt-5 md:text-2xl ">
+              <h1 className="text-[#9598e9] text-2xl text-center font-bold mb-0 mt-5 md:text-2xl ">
                 {t("Ana María Borrayo")}
               </h1>
             </div>
             <div
-              id="profile-main-info" className="flex flex-col items-start justify-center mt-10 grow-0 w-[50%] mr-10">
-              <h2 className="text-[#9598e9] text-4xl font-bold mb-5 md:text-4xl ">
+              id="profile-main-info" className="flex flex-col items-start justify-center mt-10 grow-0 w-[90%] md:w-[50%] md:mr-10">
+              <h2 className="text-[#9598e9] text-4xl font-bold mb-5 md:text-4xl text-center md:text-left">
                 {t("Contact Information")}
               </h2>
-              <p className="text-white">Email: anabellasforever@gmail.com</p>
+          <div className="text-center md:text-left w-[90%] md:w-[50%]">
+                 <p className="text-white ">Email: anabellasforever@gmail.com</p>
               <p className="text-white">Phone: +1 (520) 273-3455</p>
+          </div>
 
-              <div className="flex space-x-4 mt-4">
+              <div className="flex space-x-4 mt-4 mx-auto">
                 <a
                   href="https://facebook.com/"
                   target="_blank"
@@ -142,24 +172,24 @@ const ResumePage = () => {
                   />
                 </a>
               </div>
-              <p className="text-white text-justify mt-5 text-xl">
+              <p className="text-white text-left md:text-justify mt-5 text-xl">
                 Ana Maria Borrayo es una destacada tanatologa, suicidologa y
                 coach de vida con mas de una década de experiencia en la
                 prevención de suicidios y el acompañamiento a familias con hijos
                 en riesgo de suicidio.
               </p>
-              <p className="text-white text-justify mt-5 text-xl">
+              <p className="text-white text-left md:text-justify mt-5 text-xl">
                 Su labor se centra en ayudar a madres que enfrentan la angustia
                 de tener hijos en riego, promoviendo la comunicación asertiva,
                 el respeto, el amor para fortalecer los lazos familiares y
                 prevenir los suicidios.
               </p>
-               <p className="text-white text-justify mt-5 text-xl">
+              <p className="text-white text-center pb-5 md:pb-0 md:text-justify mt-5 text-xl">
               Fundadora de el servicio anabella’sforever LLC. 
 </p>
             </div>
           </section>
-          <section className="container mx-auto mt-10 px-4 text-2xl text-justify">
+          <section className="container mx-auto mt-10 px-4 text-xl  md:text-2xl text-justify">
             <p className="mt-5"> Ana Maria Borrayo ha desarrollado un espacio de apoyo para aquellos que buscan recuperar su estabilidad emocional tras pérdidas significativas.</p>
 
             <p className="mt-5">Su propia experiencia personal, tras la trágica muerte por suicidio de su hija mayor Anabella en el 2012, le ha otorgado una perspectiva única que la impulsa a transformar su dolor en su misión de vida.</p>
@@ -181,35 +211,51 @@ const ResumePage = () => {
                 {t("Experience")}
               </h2>
               {/* 3x3 Image Grid */}
-
-<div className="grid grid-cols-3 gap-4 w-full mt-6">
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp1} alt="Experience 1" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 1</p>
-  </div>
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp2} alt="Experience 2" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 2</p>
-  </div>
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp3} alt="Experience 3" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 3</p>
-  </div>
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp4} alt="Experience 4" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 4</p>
-  </div>
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp5} alt="Experience 5" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 5</p>
-  </div>
-  <div className="flex flex-col items-center justify-center">
-    <img src={exp6} alt="Experience 6" className="w-[400px] h-[400px] object-cover rounded mx-auto" />
-    <p className="mt-2 text-center">Legend 6</p>
+<div className="hidden md:block">
+  <div className="grid grid-cols-3 gap-4 w-full mt-6">
+    {experiences.map((item, idx) => (
+      <div key={idx} className="flex flex-col items-center justify-center">
+        <img
+          src={item.src}
+          alt={item.alt}
+          className="w-[400px] h-[400px] object-cover rounded mx-auto"
+        />
+        {/* <p className="mt-2 text-center">{item.legend}</p>*/}
+      </div>
+    ))}
   </div>
 </div>
 
-             
+             {/** CAROUSEL */}
+<div className="block md:hidden">
+             <div className="w-full max-w-4xl mx-auto flex flex-col items-center ">
+      <div className="relative w-full">
+        <img
+          src={images[index].src}
+          alt={images[index].legend}
+          className="w-full h-auto object-cover rounded"
+          style={{ maxHeight: "600px" }}
+        />
+        {/* <p className="mt-2 text-center">{item.legend}</p>*/}
+      </div>
+
+      <div className="flex justify-between w-full mt-4 px-4">
+        <button
+          onClick={handlePrev}
+          className="px-4 py-2 bg-[#111019] rounded text-white"
+        >
+          Previous
+        </button>
+        <button
+          onClick={handleNext}
+          className="px-4 py-2 bg-[#111019] rounded text-white"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+    </div>
+
             </div>
 
           <div
@@ -217,11 +263,11 @@ const ResumePage = () => {
             className="flex flex-col items-center justify-center mt-10 container mx-auto"
           >
             <div className="bg-[#111019] px-6 py-4 rounded-lg shadow-md">
-            <h2 className="text-[#9598e9] text-center text-4xl font-bold mb-5 mt-5 md:text-4xl px-40">
+            <h2 className="text-[#9598e9] text-center text-2xl  md:text-4xl font-bold mb-5 mt-5 md:text-4xl px-2 md:px-40">
               Necesitas abrir tu enfoque, un camino, acompañamiento para salir de lo que no te gusta, e ir por una nueva vida con armonía y paz?
             </h2>
         
-                 <h2 className="text-[#9598e9] text-center text-4xl font-bold mb-5 mt-5 md:text-4xl px-40">
+                 <h2 className="text-[#9598e9] text-center text-2xl  md:text-4xl font-bold mb-5 mt-5 md:text-4xl px-2 md:px-40">
               
 Será un gusto servirte 🥰
             </h2>
@@ -248,13 +294,13 @@ Será un gusto servirte 🥰
             </button>
           </div>
           <div className="flex flex-row items-center justify-center mt-10 ">
-            <h2 className="text-[#9598e9] text-4xl font-bold mb-0 mt-5 md:text-4xl ">
+            <h2 className="text-[#9598e9] text-4xl font-bold mb-0 mt-5 md:text-4xl text-center md:text-center">
               {t("Diplomas y Certificaciones")}
             </h2>
           </div>
           <div
             id="profile-certifications-links"
-            className="flex flex-row items-start justify-center gap-20 my-20 "
+            className="flex flex-row items-start justify-center gap-20 my-20 mx-5 md:mx-0"
           >
             <div>
               <ul className="list-disc">

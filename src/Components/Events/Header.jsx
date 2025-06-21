@@ -7,7 +7,6 @@ import { FaWhatsapp,FaPhone, FaFacebook, FaInstagram, FaYoutube,  FaMapMarker,Fa
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
-
 export default function Header() {
   
           const { t, i18n } = useTranslation(undefined, { useSuspense: false });
@@ -38,7 +37,7 @@ export default function Header() {
   ];
 
   return (
-    <div className='bg-[#e0e0fb] fixed w-full z-[99999]'>
+    <div className='bg-[#e0e0fb] md:fixed w-[100%] md:w-full z-[99999]'>
       
       <header className='w-full'>
         <div className='top-bar flex items-center justify-between px-4  diagonal-split'>
