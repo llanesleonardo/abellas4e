@@ -5,6 +5,8 @@ import Logo from "../../Components/Logo.jsx"
 import MobileMenu from './MobileMenu'
 import { FaWhatsapp,FaPhone, FaFacebook, FaInstagram, FaYoutube,  FaMapMarker,FaEnvelope } from "react-icons/fa";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
   
@@ -51,7 +53,7 @@ export default function Header() {
               <nav className='lg:px-4 xl:px-4 lg:pt-1 xl:pt-3 hidden lg:block'>
                 <ul className='flex items-center justify-end font-bold'>
                   {navItems.map((item, index) => (
-                    <li key={index} className='px-6 py-0 text-base'><Link to={item.href} className="text-blue-500 hover:text-blue-700">{item.text}</Link></li>
+                    <li key={index} className='px-6 py-0 text-base'><Link to={item.href} className="text-black underline">{item.text}<FontAwesomeIcon icon={faExternalLinkAlt}  className='ml-5 text-[10px]'/></Link></li>
                   ))}
                 </ul>
               </nav>

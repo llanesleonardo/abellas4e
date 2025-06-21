@@ -1,6 +1,7 @@
 import React from "react";
 import logoblack from "../../assets/gallery/logoblack.png";
 import { FaPhone, FaFacebook, FaInstagram, FaYoutube  } from "react-icons/fa";
+import dip71 from "../../assets/certifications/dip7.pdf";
 
 export default function Footer() {
   return (
@@ -17,6 +18,10 @@ export default function Footer() {
       </div>
       <div className="mx-auto flex justify-center items-center flex-wrap gap-[100px]">
             <p className="text-white font-bold text-center"> Copyright &copy; 2025 | Todos los derechos reservados
+            </p>
+      </div>
+            <div className="mx-auto flex justify-center items-center flex-wrap gap-[100px]">
+            <p className="text-white font-bold text-center"> <a href={dip71} target="_blank" className="underline">Juramento Etica Profesional Internacional Coach Federation ICF</a>
             </p>
       </div>
     </div>
