@@ -132,7 +132,7 @@ const ResumePage = () => {
 
               <div className="flex space-x-4 mt-4 mx-auto">
                 <a
-                  href="https://facebook.com/"
+                  href="https://www.facebook.com/share/16ZvP7QJtz/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -142,22 +142,12 @@ const ResumePage = () => {
                   />
                 </a>
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/anabellasforever/profilecard/?igsh=aGozeXB6bDRzcWs1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaInstagram
                     className="text-white hover:text-[#E1306C]"
-                    size={28}
-                  />
-                </a>
-                <a
-                  href="https://linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin
-                    className="text-white hover:text-[#0077B5]"
                     size={28}
                   />
                 </a>
