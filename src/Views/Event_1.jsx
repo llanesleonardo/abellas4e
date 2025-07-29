@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactFormReusable from '../Components/Events/ContactFormReusable'
-import grupoapoyodueloweb from "../assets/events/grupoapoyodueloweb.png"
+import grupoapoyodueloweb from "../assets/events/letter anabella4e - rgb -QR.png"
 import Header from '../Components/Events/Header.jsx'
 import Footer from '../Components/Events/Footer.jsx'
 
