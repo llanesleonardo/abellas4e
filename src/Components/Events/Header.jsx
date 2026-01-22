@@ -26,6 +26,7 @@ export default function Header() {
     { href: "/", text: t('Inicio') },
     { href: "/about-me", text: t('Sobre Ana Maria') },
     { href: "/apoyo-duelo", text: t('Apoyo a Duelo') },
+    { href: "/padres-con-hijos-en-riesgo", text: t('Padres con Hijos en Riesgo') },
   ];
 //    { icon: instagram, href: '#' },
 //{ icon: facebook, href: '#' }
